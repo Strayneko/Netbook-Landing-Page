@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /*
+  * ===============
+  * Aditional css
+  * ===============
+  */
+  .base-btn {
+    @apply rounded-[0.875rem]  leading-[0.875rem] font-semibold text-xs transition-all duration-75;
+  }
+  .base-btn:hover {
+    @apply shadow-[0rem_0.4375rem_1.375rem_-0.375rem_rgba(33,123,244,0.34)] transition-all duration-75 -translate-y-2;
+  }
+  .ellipse {
+    @apply bg-primary/10 w-[1.125rem] h-[1.125rem] flex items-center justify-center rounded-full;
+  }
+  .card {
+    @apply w-[21rem] h-[21.25rem] pl-[2.375rem] pr-6 md:pt-[3.125rem] pt-6 sm:pt-10 pb-9 border border-muted/10 rounded-[0.875rem];
+  }
+  .card:hover {
+    @apply shadow-lg border-transparent;
+  }
+  #about .right div.relative::before {
+    content: "";
+    @apply w-full h-full absolute bg-slate-500/50 rounded-[0.875rem] transition-all opacity-0 z-10;
+  }
+  #about .right div.relative:hover::before {
+    @apply opacity-100 transition-all cursor-pointer;
+  }
+
+  /*
+  * =========================
+  * Community card components
+  * =========================
+  */
+  .card-long {
+    @apply bg-white shadow-lg rounded-[0.875rem] flex flex-col text-center w-11/12  px-10 xl:pr-7  xl:gap-9  md:w-4/5 md:gap-x-6 md:px-8 lg:w-[40%] xl:w-[45%] lg:flex-nowrap lg:flex-row lg:gap-0 lg:px-9;
+  }
+  /* card icon box */
+  .card-long .icon-box {
+    @apply rounded-3xl h-[4.125rem] w-[4.125rem] mt-10 xl:mb-[4.75rem] mb-0 pb-0 flex-grow-0 shrink-0 flex justify-center items-center mx-auto lg:mx-0;
+  }
+  /* card icon box color */
+  .card-long .icon-box.blue {
+    background: linear-gradient(154.49deg, #5ca1fe 6.61%, #217bf4 89.72%);
+    box-shadow: 0rem 0.625rem 1.375rem -0.125rem rgba(109, 171, 255, 0.36);
+  }
+
+  .card-long .icon-box.red {
+    background: linear-gradient(154.49deg, #ff858a 6.61%, #f04148 89.72%);
+    box-shadow: 0rem 0.5rem 1.375rem -0.125rem rgba(248, 87, 94, 0.3);
+  }
+
+  .card-long .icon-box.yellow {
+    background: linear-gradient(154.49deg, #ffd085 6.61%, #ffaf2e 89.72%);
+    box-shadow: 0rem 0.625rem 1.375rem -0.125rem rgba(250, 186, 84, 0.3);
+  }
+  .card-long .text-box h4 {
+    @apply text-dark font-semibold text-2xl leading-[1.625rem] mb-[0.875rem] mt-[2.875rem];
+  }
+  .card-long .text-box p {
+    @apply text-muted font-normal text-base leading-[1.625rem] mb-11;
+  }
+
+  /*
+* =======================
+* Valuable team components
+* =======================
+*/
+  .menu-action {
+    @apply w-auto;
+  }
+  .menu-action li:hover {
+    @apply cursor-pointer;
+  }
+  .menu-action li.item {
+    @apply lg:py-7 lg:px-[3.625rem] md:py-4 md:px-16 py-8 px-32  text-[#2F2C4A] text-base leading-4 font-medium transition-all;
+  }
+  .menu-action li.item.active {
+    box-shadow: 0rem 0.4375rem 1.375rem -0.375rem rgba(0, 72, 168, 0.34);
+    @apply bg-primary m-2 text-white tracking-[0.01em] rounded-[0.875rem] lg:px-[3.125rem] lg:py-5 transition-all;
+  }
+  .menu-action li.item:hover {
+    box-shadow: 0rem 0.4375rem 1.375rem -0.375rem rgba(0, 72, 168, 0.34);
+    @apply bg-primary m-2 text-white tracking-[0.01em] rounded-[0.875rem] lg:px-[3.125rem] lg:py-5 transition-all;
+  }
+  .members-box {
+    @apply border border-[#F3F3F3] px-[3.25rem] py-[1.875rem] rounded-[0.875rem] w-5/6 lg:w-auto mx-auto text-center flex justify-center flex-col items-center lg:block md:w-[45%];
+  }
+  .members-box:hover {
+    @apply border-transparent shadow-lg;
+  }
+  .members-info h1 {
+    @apply font-semibold text-2xl text-dark leading-[1.625rem] mb-[0.875rem];
+  }
+  .members-info p {
+    @apply text-muted text-base leading-4 font-normal;
+  }
+
+  /*
+  * ===============
+  * Footer components
+  * ===============
+  */
+
+  .footer-menu h4 {
+    @apply text-white font-medium text-xl leading-5 mb-[1.375rem];
+  }
+
+  .footer-menu ul li a {
+    @apply font-normal text-base leading-[2.875rem] tracking-[0.0125em] text-[#e7e7e7];
+  }
+  .footer-menu ul li a:hover {
+    @apply text-white font-semibold;
+  }
+}
+@layer utilities {
+  input {
+    font-family: "Inter";
+  }
+}
+/*
+  * =================
+  * Navbar components
+  * ==================
+  */
+.navbar-fixed {
+  @apply fixed z-[9999] bg-white bg-opacity-70 top-0 w-full transition-all;
+  backdrop-filter: blur(0.3125rem);
+  margin-top: 0 !important;
+  box-shadow: inset 0 -0.0625rem 0 0 rgba(0, 0, 0, 0.1);
+}
+.hamburger-line {
+  @apply w-[1.875rem] h-[0.125rem] my-2 block bg-slate-500;
+}
+.hamburger-active > span:nth-child(1) {
+  @apply rotate-45;
+}
+.hamburger-active > span:nth-child(2) {
+  @apply scale-0;
+}
+.hamburger-active > span:last-child {
+  @apply -rotate-45;
+}
+.nav-link {
+  @apply font-medium text-sm text-muted;
+}
+.nav-link.active {
+  @apply text-slate-900 font-semibold;
+}

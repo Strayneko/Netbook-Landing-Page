@@ -6,6 +6,6 @@
   },
 "scripts": {
     "dev": "yarn tailwindcss -i ./src/input.css -o ./dist/css/style.css --watch",
-    "builld": "yarn tailwindcss -o ./dist/css/build.min.css --minify"
+    "builld": "yarn tailwindcss -i ./src/input.css -o ./dist/css/style.css --minify"
 }
 }

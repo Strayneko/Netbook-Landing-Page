@@ -738,7 +738,15 @@ video {
   align-items: center;
 }
 
+@media (min-width: 1024px) {
+  .box-title {
+    align-items: flex-start;
+  }
+}
+
 .box-title .title {
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 1.125rem;
   text-align: center;
   font-size: 1.875rem;
@@ -1210,6 +1218,10 @@ video {
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.place-content-center {
+  place-content: center;
 }
 
 .items-center {
@@ -2261,6 +2273,10 @@ input {
 
   .lg\:gap-y-0 {
     row-gap: 0px;
+  }
+
+  .lg\:place-self-center {
+    place-self: center;
   }
 
   .lg\:rounded-none {

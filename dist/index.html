@@ -44,16 +44,16 @@
             <div class="navbar-menu lg:flex lg:justify-between lg:w-full shadow-lg lg:shadow-none lg:static lg:px-0 lg:py-0 lg:bg-transparent lg:rounded-none absolute right-4 px-10 bg-white/[0.85] lg:backdrop-blur-none  backdrop-blur-md py-4 rounded-lg hidden animate__animated z-10 "
                 style="animation-duration: .3s;">
 
-                <div class=" menu">
-                    <ul class="lg:flex items-center gap-8">
-                        <li class="mb-2 lg:mb-0"><a href="" class="nav-link active">Home</a></li>
+                <div class="menu">
+                    <ul class="lg:flex items-center gap-8" id="navbar_menu">
+                        <li class="mb-2 lg:mb-0"><a href="#" class="nav-link active">Home</a></li>
                         <li class="mb-2 lg:mb-0">
-                            <a href="" class="flex items-center gap-1 nav-link">Community
+                            <a href="#community" class="flex items-center gap-1 nav-link">Community
                                 <img src="images/icons/CaretDown.png" alt="">
                             </a>
                         </li>
-                        <li class="mb-2 lg:mb-0"><a href="" class="nav-link">Blog</a></li>
-                        <li class="mb-2 lg:mb-0"><a href="" class="nav-link">events</a></li>
+                        <li class="mb-2 lg:mb-0"><a href="#latest" class="nav-link">Blog</a></li>
+                        <li class="mb-2 lg:mb-0"><a href="#footer_menu" class="nav-link">Events</a></li>
                     </ul>
                 </div>
 
@@ -285,9 +285,10 @@
         style="background: linear-gradient(0deg, rgba(241, 246, 253, 0) 1.63%, #F1F6FD 20.5%, #F1F6FD 58.57%, #FFFFFF 100%);">
         <div class="container lg:px-6 xl:px-0 px-2">
             <div class="box-title text-center mb-16  mx-auto lg:w-3/5 opacity-0 animate__animated">
-                <span class="text-primary font-medium text-lg leading-[1.125rem] pb-2 ">Our Community</span>
+                <span class="text-primary font-medium text-lg leading-[1.125rem] pb-2 lg:place-self-center">Our
+                    Community</span>
                 <h2 class="title">Community Main Feature</h2>
-                <p class="text lg:w-7/12 text-center">The wise man therefore
+                <p class="text lg:w-7/12 lg:place-self-center text-center">The wise man therefore
                     always holds
                     in
                     these
@@ -368,12 +369,15 @@
     <!-- Valuable team section start -->
     <section id="valuable_team" class="lg:py-[5.25rem] pt-0">
         <div class="container lg:px-6 xl:px-0 px-2">
-            <div class="box-title text-center mx-8 lg:mx-0">
-                <span class="text-primary inline-block pb-[0.625rem] font-medium text-lg leading-[1.125rem]">Valuable
+            <div class="box-title text-center mx-8 lg:mx-auto">
+                <span
+                    class="text-primary inline-block pb-[0.625rem] font-medium text-lg leading-[1.125rem] mx-auto">Valuable
                     Team</span>
-                <h2 class="title ">Our Active Members
+                <h2 class="title place-content-center">Our Active Members
                 </h2>
-                <p class="text text-muted leading-7 text-base font-normal pb-9">when an unknown printer took a galley of
+                <p class=" text-muted leading-7 text-base font-normal pb-9 text-center mx-auto inline-block">when an
+                    unknown
+                    printer took a galley of
                     type
                     and
                     meeting fari scrambled it.</p>
@@ -445,7 +449,7 @@
                     gosh off his
                     smashing boot are you taking the piss posh
                     loo brilliant.</p>
-                <div class="store flex items-center gap-5 justify-center lg:justify-start">
+                <div class="store flex flex-col sm:flex-row items-center gap-5 justify-center lg:justify-start">
                     <img src="images/icons/appstore.png" alt="App store"
                         class="hover:-translate-y-2 transition-all hover:cursor-pointer">
                     <img src="images/icons/playstore.png" alt="Play store"
@@ -529,7 +533,7 @@
     <!-- Latest news section end -->
 
     <!-- Footer menu section start -->
-    <section id="footer-menu" class="bg-[#2B2B39] pt-[4.875rem] :pl-[8.375rem] pb-[5.25rem]">
+    <section id="footer_menu" class="bg-[#2B2B39] pt-[4.875rem] :pl-[8.375rem] pb-[5.25rem]">
         <div
             class="container flex sm:gap-[6.125rem] gap-10 flex-wrap lg:flex-nowrap lg:flex-row xl:justify-between  justify-center px-6 lg:gap-20">
             <div class="footer-menu">

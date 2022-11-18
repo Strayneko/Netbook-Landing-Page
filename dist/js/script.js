@@ -13,6 +13,7 @@ const animateElement = (el, animClass) => {
       * Navbar onscroll behavior
       * =================
       */
+
 window.onscroll = () => {
   const header = el("#header");
   if (window.pageYOffset > header.offsetTop) {
